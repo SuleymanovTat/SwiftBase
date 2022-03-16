@@ -55,3 +55,22 @@ print("aa ", aa)
 //операторы замкнутого/закрытого диапозона (a...b)
 //операторы полузамкнутого/полузакрытого диапозона (a..<b)
 
+//Условия if else
+let isDay  = true
+if isDay {
+    print("yes")
+} else {
+    print("not")
+}
+
+//Условия when
+let day = "monday"
+switch day{
+case "monday": print("work monday")
+    fallthrough
+case "friday": print("work friday")
+case "sunday": print("home sunday")
+default: print("non")
+}
+
+
