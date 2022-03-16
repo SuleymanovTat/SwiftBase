@@ -100,4 +100,63 @@ print("finish")
 
 //break and  continue
 
+//tuple кортежи
 
+let mTople = ("name", "Ivan", "age", 20)
+print(mTople.0)
+print(mTople.1)
+print(mTople.2)
+print(mTople.3)
+
+print("\n")
+var (name2, ago2) = ( "Casha",  22)
+print(name2)
+print(ago2)
+
+print("\n")
+let user = (userName: "Casha", userAge:  22)
+print(user.userName)
+print(user.userAge)
+
+
+//Опциональные типы данных nil
+var phoneNumber: String?
+if phoneNumber == nil{
+    phoneNumber = "66 66 66"
+}else{
+    phoneNumber  = "88 88 88"
+}
+print(phoneNumber!)
+
+var userId: Int? = 10
+if userId == nil{
+    print("nil")
+}else{
+    userId! += 1
+}
+print(userId!)
+
+var mName: String? = nil
+mName = "str"
+//1
+print("\n1\n")
+if let safeName = mName{
+    print("safeName ", safeName)
+}else{
+    print("safeName nil")
+}
+//2
+print("\n2\n")
+var mAge: String = "12"
+if let safeAge = Int(mAge){
+    print("safeAge ",safeAge)
+}
+//3
+print("\n3\n")
+var mLastName: String? = "last name"
+print(mLastName ?? "result nil")
+//4
+print("\n4\n")
+var mNumber2: Int! = nil
+mNumber2 = 10
+print(mNumber2!)
