@@ -73,4 +73,31 @@ case "sunday": print("home sunday")
 default: print("non")
 }
 
+//Циклы
+//for in
+print("\n")
+let count  = 1...7
+for number  in count{
+    print("number ", number)
+}
+
+//while
+print("\n")
+var number = 10
+while number > 0 {
+    number -= 1
+    print(number)
+}
+print("finish")
+
+//repeat while
+print("\n")
+repeat{
+    number += 1
+    print(number)
+} while number < 6
+print("finish")
+
+//break and  continue
+
 
