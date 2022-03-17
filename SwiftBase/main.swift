@@ -163,7 +163,7 @@ print(mNumber2!)
 
 
 //структора данных
-//array(массив) set(множество) map(словари)
+//array(массив)
 
 var listPeople  = Array<String>()
 listPeople.append("Ivan")
@@ -185,6 +185,27 @@ for item in listBoots {
     print("item \(item)")
 }
 print("\n______")
-for (index, value) in listBoots.enumerated() {
+for (_, value) in listBoots.enumerated() {
     print("item \(value)")
+}
+//set(множество)
+var setBook = Set<String>()
+setBook.insert("a")
+setBook.insert("b")
+setBook.insert("c")
+setBook.insert("c")
+setBook.insert("c")
+
+for item in setBook {
+    print("item " + item)
+}
+var setBook2: Set = ["a", "b"]
+
+//map(словари)
+
+var map = ["ivan": 10, "kole": 10]
+print("map ", map["ivan"]!)
+
+for (key, value) in map {
+    print("key ", key, " value ", value)
 }
