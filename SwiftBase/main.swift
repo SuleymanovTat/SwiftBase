@@ -160,3 +160,31 @@ print("\n4\n")
 var mNumber2: Int! = nil
 mNumber2 = 10
 print(mNumber2!)
+
+
+//структора данных
+//array(массив) set(множество) map(словари)
+
+var listPeople  = Array<String>()
+listPeople.append("Ivan")
+listPeople.append("Kiril")
+print(listPeople)
+
+var listBook = [String]()
+listBook.append("android book")
+listBook.append("ios book")
+
+var listBoots = ["nike", "reebok"]
+listBoots.append("red")
+listBoots.insert("blue", at: 0)
+listBoots.remove(at: 1)
+print(listBoots[0])
+print(listBoots)
+
+for item in listBoots {
+    print("item \(item)")
+}
+print("\n______")
+for (index, value) in listBoots.enumerated() {
+    print("item \(value)")
+}
