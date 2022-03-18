@@ -209,3 +209,46 @@ print("map ", map["ivan"]!)
 for (key, value) in map {
     print("key ", key, " value ", value)
 }
+
+//func
+
+func printHello() {
+    print("hello")
+}
+func printNumber(number: Int) {
+    print("number \(number)")
+}
+func returnNumber(number: Int) -> Int{
+   return number * 2
+}
+printHello()
+printNumber(number: 90)
+print("return \(returnNumber(number: 10))")
+
+//array
+func getUsers() ->[String]{
+    return ["Timur", "Alsu", "Ramil"]
+}
+//map
+func getAddress() ->[String: Int]{
+    return ["mira": 1, "chulman": 60]
+}
+//tuple
+func getPoint() ->(x: Double, y: Double){
+    return (x: 10, y: 10)
+}
+
+
+print(getUsers()[0])
+print(getAddress()["chulman"]!)
+print(getPoint().x, getPoint().y)
+
+
+//inout
+func write(number : inout Int){
+    number*=2
+}
+
+var sizeCar = 10
+write(number: &sizeCar)
+print(sizeCar)
