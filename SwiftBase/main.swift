@@ -252,3 +252,32 @@ func write(number : inout Int){
 var sizeCar = 10
 write(number: &sizeCar)
 print(sizeCar)
+
+//Клоужеры. замыкания, ананимные классы
+
+let driving = {
+    print("вождение")
+}
+driving()
+
+let driving2 = {(place : String ) in
+    print("вождение", place )
+}
+driving2("place")
+
+let payment = {(userName : String ) -> String in
+    print("userName", userName)
+    return userName
+}
+print(payment("Ivan"))
+
+
+func travel(action:() -> Void){
+    print("start")
+    action()
+    print("end")
+}
+print("\n")
+travel {
+    print("travel")
+}
