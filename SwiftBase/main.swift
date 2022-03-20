@@ -281,3 +281,29 @@ print("\n")
 travel {
     print("travel")
 }
+
+//enum перечисления
+enum Status{
+    case success(str : String)
+    case failure
+}
+
+print(Status.success)
+print(Status.failure)
+
+print(Status.success(str: "ok"))
+print(Status.success)
+
+enum Phone: String{
+    case Apple = "iphone 12"
+    case Lg = "lg 2022"
+    case Nokia = "Nokia 2022"
+    case Realmi = "Realmi 2022"
+}
+
+print(Phone.Apple.rawValue)
+let isApple = Phone.Apple.rawValue == "iphone 12"
+print(isApple)
+print(Phone.Lg)
+
+
