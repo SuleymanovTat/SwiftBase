@@ -310,7 +310,7 @@ print(Phone.Lg)
 //класс
 
 class User{
-    var id: Int
+    let id: Int
     var name: String
     
     init(id: Int, name: String){
@@ -322,5 +322,19 @@ class User{
 let newUser = User(id: 1, name: "Ivan")
 print(newUser.id)
 print(newUser.name)
+newUser.name = "asdasd"
+
+//структара
+
+//value type Int, String, Bool, struct, array
+//reference type enum, class
+print()
+struct Phone2{
+    var name: String
+    let model:String
+}
 
 
+var phone2 = Phone2(name: "x power", model: "lg")
+phone2.name = "x power 2"
+print(phone2)
