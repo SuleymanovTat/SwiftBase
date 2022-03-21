@@ -340,3 +340,25 @@ phone2.name = "x power 2"
 print(phone2)
 
 //Свойства типов
+print()
+class Car{
+    var name: String
+    var number: String
+    
+    init(name: String, number: String){
+        self.name = name
+        self.number = number
+    }
+    
+    func move(){
+        print("move")
+    }
+}
+
+class BMW: Car{
+    
+    
+}
+var bmw = BMW(name: "x5", number: "x888xx 888")
+print(bmw.name)
+print(bmw.number)
