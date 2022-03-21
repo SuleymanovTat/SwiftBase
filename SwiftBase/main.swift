@@ -362,3 +362,15 @@ class BMW: Car{
 var bmw = BMW(name: "x5", number: "x888xx 888")
 print(bmw.name)
 print(bmw.number)
+
+//extension Расширения
+print()
+extension Double {
+    var km: Double { return self * 1_000.0 }
+    var m: Double { return self }
+    var cm: Double { return self / 100.0 }
+    var mm: Double { return self / 1_000.0 }
+    var ft: Double { return self / 3.28084 }
+}
+let dlina = 5.5
+print(dlina.km)
