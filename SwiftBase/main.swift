@@ -307,3 +307,20 @@ print(isApple)
 print(Phone.Lg)
 
 
+//класс
+
+class User{
+    var id: Int
+    var name: String
+    
+    init(id: Int, name: String){
+        self.id = id
+        self.name = name
+    }
+}
+
+let newUser = User(id: 1, name: "Ivan")
+print(newUser.id)
+print(newUser.name)
+
+
