@@ -338,3 +338,5 @@ struct Phone2{
 var phone2 = Phone2(name: "x power", model: "lg")
 phone2.name = "x power 2"
 print(phone2)
+
+//Свойства типов
