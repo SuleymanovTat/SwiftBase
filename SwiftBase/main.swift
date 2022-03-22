@@ -374,3 +374,26 @@ extension Double {
 }
 let dlina = 5.5
 print(dlina.km)
+
+print()
+//protocol interface
+protocol IBuy{
+    var price: Int { get set }
+}
+
+class Computer: IBuy{
+    var price = 100
+}
+class Book: IBuy{
+    var price = 10
+}
+
+func buyObject(item: IBuy){
+    print("item ", item.price)
+}
+
+buyObject(item: Computer())
+buyObject(item: Book())
+
+
+
